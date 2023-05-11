@@ -1,0 +1,22 @@
+{
+  "name": "@hellocacbantre/context",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/server.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=18 <19"
+  },
+  "keywords": [
+    "hellocacbantre"
+  ],
+  "author": "hinh3010",
+  "license": "hinh3010",
+  "repository": "https://github.com/hinh3010/context",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
