@@ -1,5 +1,5 @@
 export interface IContext {
-  mongodb: {
+  mongoDb: {
     uri: string;
     options: {
       useNewUrlParser?: boolean;
