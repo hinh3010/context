@@ -1,18 +1,11 @@
+import { Redis } from "ioredis";
+import { Connection } from "mongoose";
+
 export interface IContext {
   mongoDb: {
-    uri: string;
-    options: {
-      useNewUrlParser?: boolean;
-      useUnifiedTopology?: boolean;
-      ssl?: boolean;
-      sslValidate?: boolean;
-      socketTimeoutMS?: number;
-      connectTimeoutMS?: number;
-      serverSelectionTimeoutMS?: number;
-      dbName?: string;
-    };
+    instance: Connection;
   };
   redisDb: {
-    uri: string;
+    instance: Redis;
   };
 }
